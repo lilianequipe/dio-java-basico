@@ -7,7 +7,7 @@ public class Nota {
 
         System.out.println("Informe uma nota de 0 a 10:");
         nota = scan.nextInt();
-
+/*
         while (true) {
 
             if ((nota < 0) || (nota > 10)){
@@ -18,8 +18,15 @@ public class Nota {
                 System.out.println("Nota informada: "+nota);
                 break;
             }
-
         }
+*/
+        while (nota < 0 || nota > 10) {
+            System.out.println("Valor inválido. ");
+            System.out.println("Informe uma nota de 0 a 10:");
+            nota = scan.nextInt();
+        }
+        System.out.println("Nota informada: "+nota);
+
 
     }
 }

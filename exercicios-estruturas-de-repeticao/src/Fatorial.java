@@ -9,11 +9,11 @@ public class Fatorial {
 
         System.out.println("Informe o fatorial que deseja consultar: ");
         fatorial = scan.nextInt();
-        resultado = fatorial;
+        resultado = 1;
 
         System.out.println("var fatorial: "+ fatorial);
-            for (int i=fatorial; i > 1; i--) {
-                    resultado = resultado * (i-1);
+            for (int i=fatorial; i >= 1; i--) {
+                    resultado = resultado * i;
             }
         System.out.println(fatorial+"! = " + resultado);
     }

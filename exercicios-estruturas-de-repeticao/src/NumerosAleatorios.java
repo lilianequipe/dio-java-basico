@@ -7,10 +7,10 @@ public class NumerosAleatorios {
         int verifica;
         Scanner scan = new Scanner(System.in);
 
-        while(count<20){
-            System.out.println("Digite um número aleatório entre 8 e 100: (Restam: "+( 20 - count));
+        while(count < vetor.length){
+            System.out.println("Digite um número aleatório entre 0 e 100: (Restam: "+( vetor.length - count));
             verifica = scan.nextInt();
-            if(verifica<8 || verifica > 100){
+            if(verifica < 0 || verifica > 100){
                 System.out.println("Número inválido. ");
 
             }else{

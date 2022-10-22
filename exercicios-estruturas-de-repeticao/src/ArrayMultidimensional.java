@@ -10,11 +10,20 @@ public class ArrayMultidimensional {
                 M[x][y] = random.nextInt(9);
             }
         }
-          for (int x=0;x<M.length;x++){
+         /* for (int x=0;x<M.length;x++){
               for (int y=0;y<M.length;y++){
-                  System.out.println("Numero da posição ("+(x+1)+","+(y+1)+"):"+ M[x][y]);
+                  System.out.println(M[x][y]);
             }
-          }
+              System.out.println("");
+          }*/
+        for (int[] linha: M) {
+            for (int coluna: linha ) {
+                System.out.print(coluna+" ");
+
+            }
+            System.out.println();
+
+        }
         }
     }
 
